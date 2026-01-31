@@ -1,8 +1,12 @@
 {
-  "name": "backend",
+  "name": "inventory-backend",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
   "dependencies": {
     "@supabase/supabase-js": "^2.93.3",
     "cors": "^2.8.6",
