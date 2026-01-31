@@ -132,7 +132,8 @@ app.post('/api/auth/logout', async (req, res) => {
     if (error) throw error;
     res.json({ success: true });
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    console.error('Logout error:', error);
+    res.json({ success: true });
   }
 });
 
